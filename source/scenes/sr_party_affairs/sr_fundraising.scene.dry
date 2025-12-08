@@ -24,7 +24,7 @@ We maintain our current dues.
 @reduce
 subtitle: [+ sr_dues - 1 +] resources gained.
 choose-if: sr_dues > 1
-on-arrival: sr_dues -= 1; sr_resources += sr_dues; right_sr_dissent -= 10; center_sr_dissent -= 8; left_sr_dissent -= 10;
+on-arrival: sr_dues -= 1; sr_resources += 100000; right_sr_dissent -= 10; center_sr_dissent -= 8; left_sr_dissent -= 10;
 
 Our current members appreciate this, but no one decides to join a party because of the low dues.
 
