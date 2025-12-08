@@ -17,7 +17,7 @@ For better or for worse, the party cannot exist without money.
 
 @maintain
 subtitle: [+ m_dues +] resources gained.
-on-arrival: m_resources += m_dues;
+on-arrival: m_resources += 100000;
 
 We maintain our current dues.
 
