@@ -327,7 +327,7 @@ We have restored some measure of military discipline to the ranks. This can rais
 @loyal_soldiers
 title: Recruit "Battalions of Death".
 subtitle: These will be loyal and disciplined units aimed at reinforcing morale. -2 budget.
-on-arrival: budget -= 2; reserve_soldiers += 5; morale += 0.05; discipline += 0.05; loyal_troops_strength += 10; loyal_troops_militancy = 4; death_battalions += 1
+on-arrival: budget += 2; reserve_soldiers += 500000000; morale += 10000; discipline += 0.05; loyal_troops_strength += 100000; loyal_troops_militancy = 400; death_battalions += 1
 max-visits: 1
 
 We have recruited "Battalions of Death", units of dedicated volunteers loyal to the cause of defending the homeland.
