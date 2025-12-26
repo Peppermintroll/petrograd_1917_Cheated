@@ -25,7 +25,7 @@ max-visits: 1
 
 @discipline
 title: Support discipline in the military.
-on-arrival: discipline += 0.05*soviet_efficacy; morale -= 0.01; soldiers_m -= 4 if m_in_exco; soldiers_sr -= 4 if sr_in_exco; soldiers_b -= 4 if b_in_exco; soldier_unrest -= 5*unrest_modifier;
+on-arrival: discipline += 1000;
 
 Despite our support for soldiers' rights, there must be a balance for the functioning of the army. Thus, we are allowing the reinstatement of some forms of military discipline. The soldiers are displeased about this, of course.
 
