@@ -31,7 +31,7 @@ We use the influence of the Soviet to coordinate action on prices.
 title: Impose price controls and rationing on basic necessities.
 subtitle: This may simply push trade to the black market.
 view-if: (player_party = "m" and m_in_gov) or (player_party = "sr" and sr_in_gov) or (player_party = "k" and k_in_gov)
-on-arrival: monthly_inflation -= 0.4 if prov_gov_efficacy >= 0.7; monthly_inflation -= 0.2 if prov_gov_efficacy < 0.7; food_sold -= 0.001;
+on-arrival: monthly_inflation -= 100000;
 
 Price controls and rationing can reduce prices for some goods, but it only further depresses the amount of grain sold by peasants.
 
