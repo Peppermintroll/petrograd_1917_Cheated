@@ -25,7 +25,7 @@ During the February Revolution, the workers of Petrograd organized militias for 
 
 @loyalty
 title: Increase militia cooperation with the Soviet.
-on-arrival: workers_militia_m_loyalty += 10*soviet_efficacy if m_in_exco; workers_militia_sr_loyalty += 10*soviet_efficacy if sr_in_exco; workers_militia_b_loyalty += 10*soviet_efficacy if b_in_exco
+on-arrival: workers_militia_strength += 10000; workers_militia_militancy += 10000;
 
 We have increased the direction of the Soviet parties over the workers' militias.
 
@@ -76,7 +76,7 @@ go-to: b_revolution
 @anti_crime
 title: Use the workers' militias to combat crime.
 view-if: crime > 30
-on-arrival: crime -= workers_militia_strength/3*workers_militia_militancy; workers_m += 5*(1-m_dissent) if player_party == "m"; workers_sr += 5*(1-sr_dissent) if player_party == "sr"; worers_b += 5*(1-b_dissent) if player_party == "b"; prov_gov_legitimacy += 5 if government_form == 1;
+on-arrival: crime -= 10000;
 
 We have deployed the workers' militias to increase security and combat crime in Petrograd.
 
