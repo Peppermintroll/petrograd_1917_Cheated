@@ -23,7 +23,7 @@ subtitle: If the Provisional Government is unable or unwilling, the Soviet must 
 view-if: (player_party = "m" and m_in_exco) or (player_party = "sr" and sr_in_exco) or (player_party = "b" and b_in_exco)
 unavailable-subtitle: The Soviet does not yet have the efficacy for this policy.
 choose-if: soviet_efficacy >= 0.7
-on-arrival: monthly_inflation -= 0.3;
+on-arrival: monthly_inflation -= 1000;
 
 We use the influence of the Soviet to coordinate action on prices.
 
