@@ -37,7 +37,7 @@ Cracking down on black markets, hoarders, and profiteers is politically popular,
 title: Work with the cooperatives to organize food acquisition and distribution.
 unavailable-subtitle: The Soviet does not have the efficacy to do this.
 choose-if: soviet_organization >= 1 or soviet_efficacy >= 0.6
-on-arrival: food_coops += 1; food_sold += 0.01; workers_m += 2*soviet_efficacy if m_in_exco; workers_sr += 2*soviet_efficacy if sr_in_exco; workers_b += 2*soviet_efficacy if b_in_exco
+on-arrival: food_coops += 1; food_sold += 10; workers_m += 2*soviet_efficacy if m_in_exco; workers_sr += 2*soviet_efficacy if sr_in_exco; workers_b += 2*soviet_efficacy if b_in_exco
 
 We are working with the cooperatives to improve the food purchasing and distribution process.
 
