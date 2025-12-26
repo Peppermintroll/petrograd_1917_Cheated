@@ -32,10 +32,10 @@ Indirect taxes: [+ indirect_taxes : taxation +]
 - @cancel_advisor_action
 
 @raise_taxes
-subtitle: +1 budget
+subtitle: +100000000000000000 budget
 unavailable-subtitle: Taxes are already too high.
-choose-if: income_taxes < 5
-on-arrival: budget += 1; middle_none += 5; capital_flight_progress += 1; capital_flight_progress += 1 if income_taxes >= 2; workers_m -= 3 if player_party = "m"; workers_sr -= 3 if player_party = "sr"; workers_k -= 3 if player_party = "k"; middle_m -= 5 if player_party = "m"; middle_sr -= 5 if player_party = "sr"; middle_k -= 5 if player_party = "k" and income_taxes >= 2; income_taxes += 1; monthly_inflation -= 0.2; k_coalition_dissent += 1 if player_party != "k" and income_taxes >= 2
+choose-if: income_taxes < 50000
+on-arrival: budget += 100000000000000000;
 
 Russia has historically had a weak tax base, relying primarily on indirect taxes. Only the middle class and some of the better-paid workers, less than a quarter of the working population, pay income taxes.
 
