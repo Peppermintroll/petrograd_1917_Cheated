@@ -118,6 +118,8 @@ Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
 
 Parties in government: [+ governing_parties_str +]
 
+# Coalition dissent???
+
 Budget: [+ budget +]
 
 [? if not ca_election_held: Constituent Assembly elections: [? if ca_scheduled: Week [+ next_election_week +], [+ next_election_month : month +] [+ next_election_year +] ?] [? if not ca_scheduled: Not scheduled ?] ?]
@@ -231,6 +233,7 @@ switch (Q.player_party) {
 [? if player_party != "k": Kadets: [+ k_relation : relationships +] ?]
 [? if player_party != "k": </br> Leadership: [+ k_leadership : k_leadership +] ?]
 
+[? if player_party == "k": Conservatives: [+ k_conservative_relation : relationships +] ?]
 
 = Internal factions
 

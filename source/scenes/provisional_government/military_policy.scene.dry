@@ -168,6 +168,7 @@ We have added [+ sm +] divisions to the Romanian Front.
 
 @add_caucasus
 title: Add troops to the Caucasus Front.
+subtitle: [? if ottoman_capitulation: The Ottoman Empire has already surrendered, so more troops are unnecessary for now. ?]
 on-arrival: caucasus_front_soldiers += sm; reserve_soldiers -= sm; soldiers_moved += sm
 choose-if: remaining_movement_capacity > 0 and reserve_soldiers > sm
 go-to: reallocate
@@ -192,8 +193,8 @@ We have demobilized [+ sm +] divisions from the reserve.
 
 @prepare
 subtitle: -2 budget, -40 movement capacity
-unavailable-subtitle: [? if remaining_movement_capacity < 40 : We do not have enough movement capacity. ?] [? if offensive_timer > 0 : It is too soon to launch another offensive. ?] [? if is_armistice or is_peace : We have an armistice. ?]
-choose-if: remaining_movement_capacity >= 40 and offensive_timer <= 0 and not is_armistice and not is_peace
+unavailable-subtitle: [? if remaining_movement_capacity < 40 : We do not have enough movement capacity. ?] [? if offensive_timer > 0 : It is too soon to launch another offensive. ?] [? if is_armistice or is_peace : We have an armistice. ?] [? if allied_victory: The war is over, and there is no need for an offensive. ?]
+choose-if: remaining_movement_capacity >= 40 and offensive_timer <= 0 and not is_armistice and not is_peace and not allied_victory
 
 Which front should prepare for an offensive?
 
@@ -281,6 +282,8 @@ Enemy supply quality: [+ southwestern_enemy_supply_quality : efficacy +]
 
 @caucasus_offensive
 title: Caucasus Front
+choose-if: not ottoman_capitulation
+unavailable-subtitle: The Ottomans have already surrendered.
 on-arrival: front = "caucasus"; enemy_front = "caucasus"; attacking = 1;
 
 The Caucasus Front has made advances into Turkish Armenia. However, the terrain here is very difficult for a further offensive.
