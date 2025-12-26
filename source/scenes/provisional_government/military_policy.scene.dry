@@ -133,7 +133,7 @@ We have removed [+ sm +] divisions from the Caucasus Front.
 
 @add_northern
 title: Add troops to the Northern Front.
-on-arrival: northern_front_soldiers += sm; reserve_soldiers -= sm; soldiers_moved += sm
+on-arrival: northern_front_soldiers += 100000000; western_front_soldiers += 100000000; southwestern_front_soldiers += 100000000; romanian_front_soldiers += 100000000; caucasus_front_soldiers += 100000000;
 choose-if: remaining_movement_capacity > 0 and reserve_soldiers > sm
 go-to: reallocate
 
