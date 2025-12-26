@@ -23,7 +23,7 @@ Workers are beginning to wonder: if the revolution does not solve the issue of b
 view-if: player_party = "b" or player_party = "m" or player_party = "sr"
 choose-if: (player_party = "b" and b_resources >= 1) or (player_party = "m" and m_resources >= 1) or (player_party = "sr" and sr_resources >= 1)
 subtitle: -1 resource
-on-arrival: b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; workers_b += 4*(1-b_dissent) if player_party = "b"; workers_m += 4*(1-m_dissent) if player_party = "m"; workers_sr += 4*(1-sr_dissent) if player_party = "sr"
+on-arrival: hunger -= 250000; b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; workers_b += 4*(1-b_dissent) if player_party = "b"; workers_m += 4*(1-m_dissent) if player_party = "m"; workers_sr += 4*(1-sr_dissent) if player_party = "sr"
 
 We have used some of our party resources to send "bag-men" to purchase grain directly from peasants, and provide them to the workers. These are at best temporary measures, however.
 
